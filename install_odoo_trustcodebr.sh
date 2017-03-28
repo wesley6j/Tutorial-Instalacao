@@ -51,7 +51,7 @@ sudo apt-get install --no-install-recommends libxext6 -y
 sudo apt-get install --no-install-recommends libxrender1 -y
 sudo apt-get install --no-install-recommends libjpeg-turbo8 -y
 
-
+sudo apt-get install --no-install-recommends gcc -y
 Echo "Instalação das dependências pip"
 sudo -H pip install --upgrade pip
 sudo -H pip install --upgrade setuptools
@@ -108,7 +108,7 @@ echo "pip e seus requerimentos estão instalados."
 
 echo "clonando repositório git do odoo. Isso pode demorar um bom tempo."
 echo "se sua internet é lenta, recomenda-se tomar um café enquanto aguarda."
-git clone https://github.com/odoo/odoo.git
+git clone https://github.com/odoo/odoo.git --depth 1
 
 
 echo "Terminando o arquivo de configuração, quase lá."
